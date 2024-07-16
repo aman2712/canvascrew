@@ -1,0 +1,79 @@
+.home_title {
+  font-family: var(--font-kanit);
+  color: var(--primary);
+  font-weight: 600;
+  font-size: 4rem;
+}
+
+.home_desc {
+  max-width: 62vw;
+  color: var(--secondary);
+}
+
+.home_rooms {
+  margin-top: 4rem;
+  width: 30rem;
+}
+
+.home_rooms > div > h3 {
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.rooms_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.room {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgba(128, 128, 128, 0.267);
+  color: var(--primary);
+  padding: 0.6rem 1rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.room:hover {
+  background-color: rgba(128, 128, 128, 0.467);
+}
+
+.room > div > h3 {
+  font-weight: 500;
+}
+
+.room > div > p {
+  color: var(--secondary);
+  font-size: 0.9rem;
+}
+
+.room > p {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+}
+
+.homeDisplay {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+.homeDisplay > img {
+  width: 30rem;
+  margin-top: 3rem;
+  border-radius: 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  .homeDisplay {
+    flex-direction: column;
+  }
+}

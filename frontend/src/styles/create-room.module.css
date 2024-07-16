@@ -1,0 +1,105 @@
+.create_room {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.create_room > a {
+  align-self: flex-start;
+}
+
+.heading {
+  font-size: 3rem;
+  font-weight: 600;
+  align-self: flex-start;
+}
+
+.form {
+  width: 40%;
+  border-radius: 0.4rem;
+  margin-top: 5rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form > h2 {
+  font-size: 2rem;
+  font-weight: 500;
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.option_container {
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+}
+
+.options {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.active {
+  background-color: var(--primary) !important;
+}
+
+.input_container {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input_container > input {
+  color: var(--secondary);
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-bottom: 1px dashed var(--primary);
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;
+  outline: none;
+}
+
+.input_container > input:focus {
+  border-bottom: 1px solid var(--primary);
+}
+
+.players {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.467);
+  border-radius: 0.3rem;
+}
+
+.players > * {
+  margin: 0.2rem 0.4rem;
+}
+
+.players > svg {
+  color: rgb(202, 202, 202);
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+
+.players > svg:hover {
+  color: var(--primary);
+}
+
+.players > p {
+  font-weight: 600;
+  user-select: none;
+}
+
+.errorMessage {
+  align-self: flex-start;
+  margin-bottom: 1rem;
+  color: rgb(255, 52, 52);
+}

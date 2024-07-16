@@ -1,0 +1,87 @@
+.drawingRoom > h1 {
+  margin-bottom: 2rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.drawingRoom > a {
+  width: max-content;
+}
+
+.game {
+  display: flex;
+  justify-content: center;
+}
+
+.canvas {
+  background-color: white;
+  border-radius: 0.4rem 0 0 0.4rem;
+}
+
+.gameBoard {
+  display: flex;
+  align-items: center;
+}
+
+.chat_box {
+  height: 500px;
+  border: 1px solid white;
+  width: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 1rem;
+  border-radius: 0 0.4rem 0.4rem 0;
+  overflow-y: auto;
+}
+
+.send_message {
+  width: 100%;
+  display: flex;
+  border-radius: 0.4rem;
+  overflow: hidden;
+}
+
+.send_message > input {
+  flex: 1;
+  border-radius: 0;
+  margin: 0;
+  background-color: var(--secondary);
+  border: none;
+  outline: none;
+  font-family: var(--font-poppins);
+  padding: 0 0.6rem;
+  font-size: 0.8rem;
+}
+
+.send_message > input::placeholder {
+  color: rgb(99, 98, 98);
+}
+
+.send_message > button {
+  border-radius: 0 !important;
+}
+
+.message {
+  display: flex;
+  font-size: 0.8rem;
+  gap: 0.3rem;
+  margin-bottom: 0.7rem;
+}
+
+.message > p {
+  color: var(--secondary);
+}
+
+.message > h4 {
+  font-weight: 500;
+}
+
+@media screen and (max-width: 900px) {
+  .game {
+    flex-direction: column;
+  }
+  .gameBoard {
+    flex-direction: column;
+  }
+}

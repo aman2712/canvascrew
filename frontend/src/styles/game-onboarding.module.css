@@ -1,0 +1,32 @@
+.onboarding {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_container {
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.input_container > input {
+  color: var(--secondary);
+  background-color: transparent;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  border-bottom: 1px dashed var(--primary);
+  width: 100%;
+  padding-top: 0.7rem;
+  padding-bottom: 0.2rem;
+  outline: none;
+}
+
+.input_container > input:focus {
+  border-bottom: 1px solid var(--primary);
+}
+
+.form > button {
+  margin: 0 auto;
+}
