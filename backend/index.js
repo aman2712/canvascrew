@@ -24,6 +24,7 @@ const onConnection = (socket) => {
   registerGameHandlers(io, socket);
 };
 
+// an api route to get all public rooms created
 app.get("/public-rooms", (req, res) => {
   const public_rooms = [];
   for (const room in rooms) {

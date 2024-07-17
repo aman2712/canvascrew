@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import socket from "../utils/socket";
 
+// a custom hook to handle all drawing related functions on canvas
 export const useDraw = (roomId) => {
   const canvasRef = useRef(null);
   const [context, setContext] = useState(null);

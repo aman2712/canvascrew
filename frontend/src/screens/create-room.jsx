@@ -23,6 +23,7 @@ const CreateRoom = () => {
 
   const navigate = useNavigate();
 
+  // function to change number of max players in the ui control
   const changePlayers = (action) => {
     if (action === "increase") {
       if (data.max_players === 10) return;
@@ -33,6 +34,7 @@ const CreateRoom = () => {
     }
   };
 
+  // to handle form submit and emit event to create room
   function handleSubmit() {
     setMessage("");
     if (data.room_name === "" || data.username === "") {
@@ -43,6 +45,7 @@ const CreateRoom = () => {
     socket.emit("room:create", data);
   }
 
+  // once room is created, navigate to game lobby
   useEffect(() => {
     socket.on("room:created", (roomId) => {
       navigate(`/game/${roomId}`);
