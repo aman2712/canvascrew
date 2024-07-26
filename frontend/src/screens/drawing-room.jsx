@@ -14,7 +14,7 @@ const DrawingRoom = () => {
   const [messages, setMessages] = useState([]);
   const [text, setText] = useState("");
   const { roomId } = useParams();
-  const { canvasRef, setColor } = useDraw(roomId);
+  const { canvasRef, setColor, saveSnapshot } = useDraw(roomId);
 
   const navigate = useNavigate();
 
@@ -69,6 +69,12 @@ const DrawingRoom = () => {
   return (
     <div className={classes.drawingRoom}>
       <h1>Let your creativity flow!</h1>
+      <button
+        className={`btn btn-primary ${classes.save_btn}`}
+        onClick={saveSnapshot}
+      >
+        Save Snapshot
+      </button>
       <div className={classes.game}>
         <div className={classes.gameBoard}>
           <CirclePicker

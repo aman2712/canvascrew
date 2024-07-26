@@ -11,6 +11,11 @@ export const useDraw = (roomId) => {
     context.strokeStyle = value;
   };
 
+  const saveSnapshot = () => {
+    const canvas = canvasRef.current;
+    console.log(canvas.toDataURL("image/png"));
+  };
+
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
@@ -60,5 +65,5 @@ export const useDraw = (roomId) => {
     };
   }, [isDrawing, context]);
 
-  return { canvasRef, setColor };
+  return { canvasRef, setColor, saveSnapshot };
 };
